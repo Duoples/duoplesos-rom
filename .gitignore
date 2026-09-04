@@ -1,0 +1,11 @@
+# Configuration & Keys
+*.conf
+*.key
+*.pem
+*.json
+
+# Logs & Output
+*.log
+out/
+.repo/
+.crave/

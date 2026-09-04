@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- Build number and version -->
+    <string name="duoples_version">Duoplesos version</string>
+    <string name="duoples_version_default">Unknown</string>
+
+    <!-- ROM name -->
+    <string name="build_name">Duoplesos</string>
+    
+    <!-- About phone screen -->
+    <string name="about_device_name">Duoplesos device</string>
+    <string name="device_info_title">Duoplesos information</string>
+    
+    <!-- Dashboard titles -->
+    <string name="duoples_settings_title">Duoplesos Extras</string>
+    <string name="duoples_settings_summary">Customization and UI tweaks</string>
+</resources>

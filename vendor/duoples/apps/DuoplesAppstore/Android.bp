@@ -1,0 +1,9 @@
+android_app_import {
+    name: "DuoplesAppstore",
+    apk: "DuoplesAppstore.apk",
+    presigned: true,
+    privileged: true,
+    dex_preopt: {
+        enabled: false,
+    },
+}
