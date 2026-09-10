@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Remote for Duoplesos project (placeholder) -->
-  <remote name="duoples"
-          fetch="https://github.com/duoplesos"
-          revision="refs/heads/lineage-23.0" />
-
-  <!-- Example of adding a custom vendor repository -->
-  <!-- <project path="vendor/duoples" name="android_vendor_duoples" remote="duoples" /> -->
-
   <!-- LineageOS Remote -->
   <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.0" />
   <remote name="muppets" fetch="https://github.com/TheMuppets" revision="lineage-23.0" />
@@ -21,8 +13,4 @@
   <!-- Vendor Blobs -->
   <project path="vendor/xiaomi/violet" name="proprietary_vendor_xiaomi_violet" remote="muppets" />
   <project path="vendor/xiaomi/sm6150-common" name="proprietary_vendor_xiaomi_sm6150-common" remote="muppets" />
-  <!-- Native ARM64 Host Prebuilts -->
-  <project path="prebuilts/clang/host/linux-arm64" name="platform/prebuilts/clang/host/linux-arm64" remote="aosp" revision="main" clone-depth="1" />
-  <project path="prebuilts/go/linux-arm64" name="platform/prebuilts/go/linux-arm64" remote="aosp" revision="main" clone-depth="1" />
-  <project path="prebuilts/python/linux-arm64" name="platform/prebuilts/python/linux-arm64" remote="aosp" revision="main" clone-depth="1" />
 </manifest>

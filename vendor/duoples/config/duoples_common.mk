@@ -27,3 +27,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Add custom packages here (like Infinity Suite if you port it)
 PRODUCT_PACKAGES += \
     DuoplesAppstore
+PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/wlan
