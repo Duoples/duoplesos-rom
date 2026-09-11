@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- LineageOS Remote -->
-  <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.0" />
-  <remote name="muppets" fetch="https://github.com/TheMuppets" revision="lineage-23.0" />
+  <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-23.2" />
+  <remote name="muppets" fetch="https://github.com/TheMuppets" revision="lineage-23.2" />
 
   <!-- Xiaomi Redmi Note 7 Pro (violet) -->
   <project path="device/xiaomi/violet" name="android_device_xiaomi_violet" remote="lineage" />
