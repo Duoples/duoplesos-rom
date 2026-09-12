@@ -1,30 +1,31 @@
-# Duoplesos Common Configuration
+# DuoplesOS Common Configuration - Android 17
 
-# Inherit from common LineageOS configuration
-# Note: In a real build tree, this path would be valid.
-# $(call inherit-product, vendor/lineage/config/common.mk)
-
-PRODUCT_BRAND := Duoplesos
+PRODUCT_BRAND := DuoplesOS
 PRODUCT_NAME := duoples
-PRODUCT_MANUFACTURER := Duoplesos
+PRODUCT_MANUFACTURER := Duoples
 
-# Duoplesos-specific versioning
+# Versioning
 include vendor/duoples/config/version.mk
 
-# Custom UI branding
+# Custom UI branding properties
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.duoples.version=$(DUOPLES_VERSION) \
     ro.duoples.releasetype=$(DUOPLES_BUILDTYPE) \
     ro.duoples.device=$(DUOPLES_DEVICE) \
-    ro.duoples.build.version=$(DUOPLES_BUILD_VERSION)
+    ro.duoples.build.version=$(DUOPLES_BUILD_VERSION) \
+    ro.duoples.android.version=$(DUOPLES_ANDROID_VERSION)
 
-# Override LineageOS properties if needed
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.lineage.build.version=$(DUOPLES_BUILD_VERSION) \
     ro.lineage.releasetype=$(DUOPLES_BUILDTYPE) \
     ro.lineage.device=$(DUOPLES_DEVICE)
 
-# Add custom packages here (like Infinity Suite if you port it)
+# Prebuilt Duoples Appstore v0.7.1
 PRODUCT_PACKAGES += \
     DuoplesAppstore
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/wlan
+
+# Qualcomm WLAN and Hardware namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan/legacy \
+    hardware/qcom-caf/wlan \
+    hardware/qcom-caf/wlan/qcwcn
