@@ -17,4 +17,3 @@ PRODUCT_DEVICE := lavender
 PRODUCT_MODEL := Redmi Note 7
 
 PRODUCT_SOONG_NAMESPACES +=     hardware/qcom/wlan/legacy     hardware/qcom-caf/wlan     hardware/qcom-caf/wlan/qcwcn
-PRODUCT_SOONG_NAMESPACES += hardware/qcom-caf/sm8850
