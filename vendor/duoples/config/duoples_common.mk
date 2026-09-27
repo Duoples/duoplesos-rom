@@ -23,9 +23,3 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 # Prebuilt Duoples Appstore v0.7.1
 PRODUCT_PACKAGES += \
     DuoplesAppstore
-
-# Qualcomm WLAN and Hardware namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/qcom/wlan/legacy \
-    hardware/qcom-caf/wlan \
-    hardware/qcom-caf/wlan/qcwcn
