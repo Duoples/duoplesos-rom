@@ -16,7 +16,8 @@ PRODUCT_NAME := duoples_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_MODEL := Redmi Note 7
 
-
-# Qualcomm WLAN Soong namespace (upstream LavenderLabz tree declares none;
-# required so frameworks/opt/net/wifi can resolve libwifi-hal-qcom)
-PRODUCT_SOONG_NAMESPACES += hardware/qcom/wlan
+# Qualcomm WLAN Soong namespaces (upstream LavenderLabz tree declares none;
+# required so frameworks/opt/net/wifi and wpa_supplicant can resolve libwifi-hal-qcom and lib_driver_cmd_qcwcn)
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/wlan \
+    hardware/qcom/wlan/legacy
